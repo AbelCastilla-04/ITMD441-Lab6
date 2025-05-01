@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #e0f7fa, #fff3e0);
+  margin: 0;
+  padding: 20px;
+}
+
+.dashboard {
+  max-width: 500px;
+  margin: auto;
+  padding: 30px;
+  background-color: #ffffffdd;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.results, .error {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.results {
+  background-color: #e3f2fd;
+}
+
+.error {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.hidden {
+  display: none;
+}
