@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Sunrise & Sunset Dashboard</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunrise And Sunset Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="dashboard">
-    <h1>Sunrise & Sunset Times</h1>
-    <p>Select a location to view sunrise and sunset data.</p>
+  <main class="container">
+    <header>
+      <h1>Sun Tracker Dashboard</h1>
+      <p>View sunrise and sunset data for today and tomorrow</p>
+    </header>
 
-    <select id="locationSelect">
-      <option value="">-- Select a location --</option>
-      <option value="41.8781,-87.6298">Chicago, IL</option>
-      <option value="34.0522,-118.2437">Los Angeles, CA</option>
-      <option value="40.7128,-74.0060">New York, NY</option>
-      <option value="51.5074,-0.1278">London, UK</option>
-      <option value="35.6895,139.6917">Tokyo, Japan</option>
-      <option value="48.8566,2.3522">Paris, France</option>
-      <option value="55.7558,37.6173">Moscow, Russia</option>
-      <option value="28.6139,77.2090">New Delhi, India</option>
-      <option value="-33.8688,151.2093">Sydney, Australia</option>
-      <option value="-23.5505,-46.6333">São Paulo, Brazil</option>
-    </select>
+    <section class="controls">
+      <select id="locationSelect">
+        <option value="">-- Choose a location --</option>
+        <option value="41.8781,-87.6298">Chicago, IL</option>
+        <option value="34.0522,-118.2437">Los Angeles, CA</option>
+        <option value="40.7128,-74.0060">New York, NY</option>
+        <option value="51.5074,-0.1278">London, UK</option>
+        <option value="35.6895,139.6917">Tokyo, Japan</option>
+        <option value="48.8566,2.3522">Paris, France</option>
+        <option value="55.7558,37.6173">Moscow, Russia</option>
+        <option value="28.6139,77.2090">New Delhi, India</option>
+        <option value="-33.8688,151.2093">Sydney, Australia</option>
+        <option value="-23.5505,-46.6333">São Paulo, Brazil</option>
+      </select>
+    </section>
 
-    <div id="resultBox" class="results hidden">
-      <h2>Results</h2>
-      <p><strong>Sunrise:</strong> <span id="sunrise"></span></p>
-      <p><strong>Sunset:</strong> <span id="sunset"></span></p>
-    </div>
+    <section id="dashboard" class="dashboard">
+      <div class="placeholder">Select a location to see data</div>
+    </section>
 
     <div id="errorBox" class="error hidden"></div>
-  </div>
+  </main>
 
   <script src="script.js"></script>
 </body>
