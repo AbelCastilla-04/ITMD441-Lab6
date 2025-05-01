@@ -14,13 +14,13 @@ function createCard(title, data) {
   return `
     <div class="card">
       <h3>${title}</h3>
-      <p><strong>Sunrise:</strong> ${data.sunrise}</p>
-      <p><strong>Sunset:</strong> ${data.sunset}</p>
-      <p><strong>Dawn:</strong> ${data.dawn}</p>
-      <p><strong>Dusk:</strong> ${data.dusk}</p>
-      <p><strong>Day Length:</strong> ${data.day_length}</p>
-      <p><strong>Solar Noon:</strong> ${data.solar_noon}</p>
-      <p><strong>Timezone:</strong> ${data.timezone}</p>
+      <p><i class="fas fa-sun"></i><strong>Sunrise:</strong> ${data.sunrise}</p>
+      <p><i class="fas fa-moon"></i><strong>Sunset:</strong> ${data.sunset}</p>
+      <p><i class="fas fa-cloud-sun"></i><strong>Dawn:</strong> ${data.dawn}</p>
+      <p><i class="fas fa-cloud-moon"></i><strong>Dusk:</strong> ${data.dusk}</p>
+      <p><i class="fas fa-ruler-horizontal"></i><strong>Day Length:</strong> ${data.day_length}</p>
+      <p><i class="fas fa-clock"></i><strong>Solar Noon:</strong> ${data.solar_noon}</p>
+      <p><i class="fas fa-globe"></i><strong>Timezone:</strong> ${data.timezone}</p>
     </div>
   `;
 }
